@@ -13,6 +13,7 @@ class TestMbtaFeed(unittest.TestCase):
     def test1(self):
         m = MbtaFeed()
         m.read_feeds()
+        m.save_data()
 
 if __name__ == '__main__':
         unittest.main()
