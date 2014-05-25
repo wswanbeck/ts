@@ -34,7 +34,11 @@ class MbtaFeed:
             dest = message['Destination']
             vehicle = message['Vehicle']
             trip = message['Trip']
-            speed = int(message['Speed'])
+            try:
+                speed = int(message['Speed'])
+            except:
+                speed = 0
+                
             flag = message['Flag']
 
             # vehicle is probably right if flag it not 'Pre' or 'Sch'
