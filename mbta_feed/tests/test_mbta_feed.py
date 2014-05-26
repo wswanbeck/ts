@@ -4,9 +4,8 @@
 import unittest
 
 import __add_path
-from utils.utils import Utils
-
 __add_path.add_path('../..')
+from utils.utils import Utils
 
 from mbta_feed.mbta_feed import MbtaFeed
 from db.mbta_status_sqlite import MbtaStatus_sqlite
